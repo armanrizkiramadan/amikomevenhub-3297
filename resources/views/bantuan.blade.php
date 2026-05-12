@@ -3,27 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pusat Bantuan</title>
+    <title>Profil & Kontak - My App</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-indigo-50 p-10">
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-center space-x-6">
+        <a href="/profil" class="hover:text-blue-600">Profil</a>
+        <a href="/katalog" class="hover:text-blue-600">Katalog</a>
+        <a href="/kontak" class="text-blue-600 font-bold border-b-2 border-blue-600">Bantuan</a>
+    </nav>
 
-    <div class="mb-8 flex space-x-4 justify-center">
-        <a href="/" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Home</a>
-        <a href="/profil" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Profil</a>
-        <a href="/katalog" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Katalog</a>
-        <a href="/bantuan" class="px-4 py-2 bg-blue-700 text-white rounded shadow-lg">Bantuan</a>
-    </div>
+    <div class="max-w-2xl mx-auto mt-10 p-6">
+        <!-- Header Profil -->
+        <div class="text-center mb-10">
+            <div class="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+                JD
+            </div>
+            <h1 class="text-2xl font-bold">Abdullah Adzin Hanan</h1>
+            <p class="text-gray-500 italic">Web Developer & UI Enthusiast</p>
+        </div>
 
-    <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100 text-center">
-        <h1 class="text-3xl font-extrabold text-gray-800 mb-4">FAQ & Bantuan</h1>
-        <p class="text-gray-600 mb-6">Punya pertanyaan? Berikut adalah jawaban yang mungkin membantu.</p>
-        
-        <div class="text-left bg-gray-50 p-4 rounded mb-4">
-            <h3 class="font-bold text-gray-700">Q: Bagaimana cara mendaftar event?</h3>
-            <p class="text-gray-600 text-sm">A: Buka halaman katalog, lalu pilih event yang tersedia.</p>
+        <!-- Detail Kontak -->
+        <div class="space-y-4">
+            <h2 class="text-xl font-semibold border-l-4 border-blue-600 pl-4 mb-4">Informasi Kontak</h2>
+            
+            <div class="bg-white p-4 rounded border flex items-center space-x-4">
+                <span class="text-blue-600 font-bold">Email:</span>
+                <span class="text-gray-600">abdullahadzinhanan@students.amikom.ac.id</span>
+            </div>
+
+            <div class="bg-white p-4 rounded border flex items-center space-x-4">
+                <span class="text-blue-600 font-bold">WhatsApp:</span>
+                <span class="text-gray-600">+62 81334989862</span>
+            </div>
+
+            <div class="bg-white p-4 rounded border flex items-center space-x-4">
+                <span class="text-blue-600 font-bold">Lokasi:</span>
+                <span class="text-gray-600">Yogyakarta, Indonesia</span>
+            </div>
+        </div>
+
+        <!-- Social Media / Link Cepat -->
+        <div class="mt-8 flex justify-center space-x-4">
+            <a href="#" class="text-sm bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">LinkedIn</a>
+            <a href="https://github.com/abdullahadzinhanan" class="text-sm bg-gray-800 text-white px-4 py-2 rounded hover:bg-black transition">GitHub</a>
+            <a href="https://instagram.com/ziiinnn.___" class="text-sm bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700 transition">Instagram</a>
         </div>
     </div>
-
 </body>
 </html>
